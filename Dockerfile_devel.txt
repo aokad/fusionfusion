@@ -1,0 +1,7 @@
+FROM gcatworkflow/fusionfusion:0.1.0
+MAINTAINER Ai Okada <aokada@ncc.go.jp> 
+
+RUN wget https://github.com/aokad/fusionfusion/archive/refs/tags/v0.5.2b1.zip && \
+    tar xzvf v0.5.2b1.tar.gz && \
+    cd fusionfusion-0.5.2b1 && \
+    python setup.py install
